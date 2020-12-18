@@ -45,5 +45,16 @@ public class SortsTester{
     Sorts.bubbleSort(tester2);
     System.out.println(Arrays.toString(tester2));
     System.out.println();
+
+    int[] tester4 = new int[10];
+    Random rng4 = new Random(100);
+    for(int i = 0; i < 10; i++){
+      tester4[i] = (rng4.nextInt() % 1000);
+    }
+    System.out.println(Arrays.toString(tester4));
+    System.out.println("Used InsertionSort on array");
+    Sorts.insertionSort(tester4);
+    System.out.println(Arrays.toString(tester4));
+    System.out.println();
   }
 }
