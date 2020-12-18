@@ -29,6 +29,14 @@ public class Sorts{
   }
 
   public static void insertionSort(int[] data){
-
+    for(int i = 1; i < data.length; i++){
+      int holder = data[i];
+      int j = i - 1;
+      while(j >= 0 && data[j] > holder){
+        data[j + 1] = data[j];
+        j = j - 1;
+      }
+      data[j + 1] = holder;
+    }
   }
 }
