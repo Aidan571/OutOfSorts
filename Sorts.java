@@ -1,3 +1,4 @@
+import java.util.Arrays;
 public class Sorts{
   public static void bubbleSort(int[] data){
     int leng = data.length;
@@ -25,5 +26,9 @@ public class Sorts{
       data[minimum] = data[i];
       data[i] = holder;
     }
+  }
+
+  public static void insertionSort(int[] data){
+
   }
 }
