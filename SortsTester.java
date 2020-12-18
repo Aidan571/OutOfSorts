@@ -11,6 +11,7 @@ public class SortsTester{
     System.out.println("Used bubbleSort on array");
     Sorts.bubbleSort(tester0);
     System.out.println(Arrays.toString(tester0));
+    System.out.println();
 
     int[] tester1 = new int[100];
     Random rng1 = new Random(5050);
@@ -21,6 +22,18 @@ public class SortsTester{
     System.out.println("Used bubbleSort on array");
     Sorts.bubbleSort(tester1);
     System.out.println(Arrays.toString(tester1));
+    System.out.println();
+
+    int[] tester3 = new int[100];
+    Random rng3 = new Random(5050);
+    for(int i = 0; i < 100; i++){
+      tester3[i] = (rng3.nextInt() % 1000);
+    }
+    System.out.println(Arrays.toString(tester3));
+    System.out.println("Used SelectionSort on array");
+    Sorts.selectionSort(tester3);
+    System.out.println(Arrays.toString(tester3));
+    System.out.println();
 
     int[] tester2 = new int[2];
     Random rng2 = new Random(2500);
@@ -31,5 +44,6 @@ public class SortsTester{
     System.out.println("Used bubbleSort on array");
     Sorts.bubbleSort(tester2);
     System.out.println(Arrays.toString(tester2));
+    System.out.println();
   }
 }
