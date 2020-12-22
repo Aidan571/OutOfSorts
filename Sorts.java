@@ -3,15 +3,15 @@ public class Sorts{
   public static void bubbleSort(int[] data){
     int leng = data.length;
     int holder = 0;
-    int counter = 1;
-    for(int i = 0; i < leng - 1 && counter > 0; i++){
-      counter = 0;
+    boolean counter = true;
+    for(int i = 0; i < leng - 1 && counter; i++){
+      counter = false;
       for(int j = 1; j < (leng - i); j++){
         if(data[j-1] > data[j]){
           holder = data[j-1];
           data[j-1] = data[j];
           data[j] = holder;
-          counter++;
+          counter = true;
         }
       }
       }
